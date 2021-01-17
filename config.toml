@@ -1,0 +1,104 @@
+baseURL = ""
+title = "Travelify"
+subtitle = "Travel theme for Hugo with Slider"
+languageCode = "en-us"
+theme = "travelify"
+GoogleAnalytics = ""
+canonifyURLs = true
+themesDir = "themes"
+publishDir = "public"
+
+[params]
+author = "nikimonikado"
+site_description = "Travel theme for Hugo with Slider"
+copyright = "Copyright"
+logo = "logo.png"
+title_in_logo = true
+disable_mathjax = true
+date_format = "02 January, 2006"
+custom_css = [ ]
+custom_js = [ ]
+
+  [params.share]
+  enable = true
+  facebook = true
+  twitter = true
+  linkedin = true
+  email = true
+
+  [params.privacy]
+  enable = true
+  facebook_like = true
+  DisqusShortname = "example"
+
+  [params.widgets]
+  recent_articles = true
+  categories = true
+  tags = true
+  tag_cloud = true
+  archives = false
+  search = true
+  mailchimp = true
+  mailchimpform = "//balaramadurai.us15.list-manage.com/subscribe/post?u=7f4183fa2fe7abe3dc9f4efad&amp;id=49a3dd3745"
+  author = true
+
+  [params.slider]
+  enable = true
+  manual = false
+  num_features = 6
+
+[[menu.main]]
+name = "About"
+url = "/about/"
+weight = 10
+
+[[menu.main]]
+name = "contact"
+url = "/contact/"
+weight = 20
+
+[[menu.main]]
+name = "Contact2"
+url = "/contact/"
+parent = "contact"
+
+[[menu.main]]
+name = "Contact21"
+url = "/contact/"
+parent = "Contact2"
+weight = 20
+
+[[menu.main]]
+name = "cOntact22"
+url = "/contact/"
+parent = "Contact2"
+weight = 10
+
+[[menu.main]]
+name = "cOntact3"
+url = "/contact/"
+parent = "contact"
+
+[social]
+rss = "Needed"
+github = "example"
+flickr = "example"
+instagram = "example"
+youtube = "example"
+vimeo = "example"
+tumblr = "example"
+linkedin = "example"
+pinterest = "example"
+facebook = "example"
+twitter = "example"
+email = "joe@example.com"
+
+[permalinks]
+categories = "/categories/:slug/"
+tags = "/tags/:slug/"
+
+[taxonomies]
+category = "categories"
+tag = "tags"
+series = "series"
+author = "author"
